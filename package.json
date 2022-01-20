@@ -1,0 +1,8 @@
+{
+  "name": "LinkedList",
+  "version": "1.0.0",
+  "description": "LinkedList composition",
+  "main": "index.js",
+  "author": "Emanuele Gurini",
+  "license": "MIT"
+}
