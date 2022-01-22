@@ -1,4 +1,5 @@
 interface ILinkedList {
+	
 	getHead : () => void
 }
 

@@ -1,6 +1,7 @@
 interface INode {
-  getValue : () => void
-  getNext : () => void 
+
+  getElement : () => void
+  
 }
 
 export default INode
