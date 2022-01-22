@@ -1,8 +1,8 @@
 import INode  from './INode'
  
 export default class Node<T> implements INode {
-	element : T;
-	next : Node<T> | null
+	private element : T;
+	private next : Node<T> | null;
 
   constructor(element : T) {
     this.element = element;
@@ -11,6 +11,14 @@ export default class Node<T> implements INode {
 
   getElement = () : T => {
     return this.element
+  }
+
+  getNext = () : Node<T> => {
+    return this.next
+  }
+
+  setNext = (node : Node<T>) : void => {
+    this.next = node;
   }
 
 }
