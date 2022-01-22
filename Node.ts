@@ -1,18 +1,16 @@
 import INode  from './INode'
  
-export default class Node implements INode {
-	value : number;
-	next : Node
-  constructor(value, next = null) {
-    this.value = value;
-    this.next = next;
+export default class Node<T> implements INode {
+	element : T;
+	next : Node<T> | null
+
+  constructor(element : T) {
+    this.element = element;
+    this.next = null;
   }
 
-  getValue = () : void => {
-    console.log('Node Value:',this.value)
+  getElement = () : T => {
+    return this.element
   }
 
-  getNext = () : void => {
-    console.log('Next Node:', this.next.value)
-  }
 }
