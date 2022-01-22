@@ -1,14 +1,22 @@
 interface INode {
 
+
   /* 
   * Return the node value
   */
   getElement : () => void
 
   /* 
-  * Set next node value in the linkedlist
+  * get next node value in the linkedlist
   */
   getNext : () => void
+
+  /* 
+  * Set next node value in the linkedlist
+  *
+  * @param node 
+  */
+  setNext : (node : any) => void
 
 }
 
