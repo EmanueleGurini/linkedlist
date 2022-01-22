@@ -2,7 +2,7 @@ interface ILinkedList {
 
 	getHead : () => void
 
-	// addNode : () => void
+	addNode : (nodeValue : any) => void
 }
 
 export default ILinkedList
